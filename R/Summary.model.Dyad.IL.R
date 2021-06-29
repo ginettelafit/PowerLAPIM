@@ -30,7 +30,22 @@ is.center.X,is.center.W,R,alpha,is.REML){
 ########################################################################################
 ########################################################################################
   
-library(future.apply)  
+library(nlme)
+library(MASS)
+library(tidyverse)
+library(future.apply)
+library(gridExtra)
+library(formattable)
+library(htmltools)
+library(shiny)
+library(DT)
+library(ggplot2)
+library(gridExtra)
+library(data.table)
+library(plyr)
+library(dplyr)
+library(tidyr)
+library(shinyjs) 
 
 # Simulate data from APIM model
 
