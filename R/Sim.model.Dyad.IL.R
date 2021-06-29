@@ -30,6 +30,8 @@ Sim.model.Dyad.IL = function(Model,N.dyad,N0.dyad,N1.dyad,T.obs,
   ###############################################################
   ###############################################################
   
+  library(future.apply)
+  
   message('Initializing...')
   
   # Check parameters & and output messages
