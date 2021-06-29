@@ -30,22 +30,22 @@ is.center.X,is.center.W,R,alpha,is.REML){
 ########################################################################################
 ########################################################################################
   
-library(nlme)
-library(MASS)
-library(tidyverse)
-library(future.apply)
-library(gridExtra)
-library(formattable)
-library(htmltools)
-library(shiny)
-library(DT)
-library(ggplot2)
-library(gridExtra)
-library(data.table)
-library(plyr)
-library(dplyr)
-library(tidyr)
-library(shinyjs) 
+suppressMessages(library(nlme,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(MASS,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(tidyverse,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(future.apply,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(gridExtra,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(formattable,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(htmltools,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(shiny,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(DT,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(ggplot2,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(gridExtra,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(data.table,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(plyr,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(dplyr,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(tidyr,warn.conflicts = FALSE, quietly=TRUE))
+suppressMessages(library(shinyjs,warn.conflicts = FALSE, quietly=TRUE))
 
 # Simulate data from APIM model
 
