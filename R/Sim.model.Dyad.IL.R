@@ -30,7 +30,22 @@ Sim.model.Dyad.IL = function(Model,N.dyad,N0.dyad,N1.dyad,T.obs,
   ###############################################################
   ###############################################################
   
-  library(future.apply)
+library(nlme)
+library(MASS)
+library(tidyverse)
+library(future.apply)
+library(gridExtra)
+library(formattable)
+library(htmltools)
+library(shiny)
+library(DT)
+library(ggplot2)
+library(gridExtra)
+library(data.table)
+library(plyr)
+library(dplyr)
+library(tidyr)
+library(shinyjs)
   
   message('Initializing...')
   
