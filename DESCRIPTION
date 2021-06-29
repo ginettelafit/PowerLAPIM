@@ -1,0 +1,10 @@
+Package: PowerLAPIM
+Type: Package
+Title: Power Analysis Longitudinal APIM with Quadratic Effects
+Version: 0.1.0
+Author: Ginette Lafit
+Maintainer: The package maintainer <ginette.lafit@kuleuven.be>
+Description: Conduct power analysis for Longitudinal Actor-Partner Interdependence Models that include quadratic effects.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
