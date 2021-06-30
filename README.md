@@ -1,7 +1,7 @@
 # PowerLAPIM
 A Shiny application and R package to conduct power analysis for Longitudinal Actor-Partner Interdependence Models (L-APIMs) that include quadratic effects.
 
-The repository contains functions used in the following (Add link):
+The repository contains functions used in the following [paper](https://psyarxiv.com/mnce4/):
 
 Lafit, Ginette, Sels, Laura, Adolf, Janne K., Loeys, Tom, and Eva Ceulemans. (2021). “PowerLAPIM: An Application to Conduct Power Analysis for Longitudinal Actor-Partner Interdependence Models that Include Quadratic Effects” 
 
@@ -57,7 +57,7 @@ The shiny app focuses on a set of research questions regarding the L-APIM. The a
 
 These categories are not mutually exclusive in that the models included in the application sometimes combine multiple category features (e.g., models with linear, quadratic, and autoregressive effects).  All models are implemented in a multilevel regression framework, which means that they distinguish differences between dyads from differences within dyads and partners. We restrict the application to models with random intercepts, capturing stable inter-dyadic differences, and fixed actor, partner, and moderation effects. A more detailed description of the models can be found in the supplementary material available on [OSF](https://osf.io/vtb9e/).
 
-A hands-on tutorial for conducting simulation-based power analyses for the L-APIM can be fuond here (add link).
+A hands-on tutorial for conducting simulation-based power analyses for the L-APIM can be fuond [here](https://psyarxiv.com/mnce4/).
 
 
 
