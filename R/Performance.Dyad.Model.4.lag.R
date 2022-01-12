@@ -39,8 +39,9 @@ fit.Model.4 = lme(fixed = Y ~ 1 + Z + Y.lag + Y.lag.Z +
                   weights = varIdent(form = ~1|Gender),
                   data = data, na.action=na.omit, 
                   method = 'REML',
-                  control = lmeControl(optimizer="bobyqa", optCtrl=list(maxfun=2e5), 
-                  maxIter=500, msMaxIter=500, msVerbose = FALSE))
+                  control = lmeControl(opt = "optim", method = "L-BFGS-B",
+                  optCtrl=list(maxfun=2e5),msVerbose=FALSE,         
+                  maxIter=1000,msMaxIter=1000)) 
 }
 
 if (is.REML==FALSE){
@@ -51,8 +52,9 @@ fit.Model.4 = lme(fixed = Y ~ 1 + Z + Y.lag + Y.lag.Z +
                   weights = varIdent(form = ~1|Gender),
                   data = data, na.action=na.omit, 
                   method = 'ML',
-                  control = lmeControl(optimizer="bobyqa", optCtrl=list(maxfun=2e5), 
-                  maxIter=500, msMaxIter=500, msVerbose = FALSE))
+                  control = lmeControl(opt = "optim", method = "L-BFGS-B",
+                  optCtrl=list(maxfun=2e5),msVerbose=FALSE,         
+                  maxIter=1000,msMaxIter=1000)) 
 }
 
 # Performance measures 
