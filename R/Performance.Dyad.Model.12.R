@@ -44,9 +44,7 @@ fit.Model.12 = lme(fixed = Y ~ 1 + Z + X.Actor + X.Actor.2 + X.Actor.Z + X.Actor
                   weights = varIdent(form = ~1|Gender),
                   data = data, na.action=na.omit, 
                   method = 'REML',
-                  control = lmeControl(opt = "optim", method = "L-BFGS-B",
-                  optCtrl=list(maxfun=2e5),msVerbose=FALSE,         
-                  maxIter=1000,msMaxIter=1000)) 
+                  control=list(msVerbose=TRUE, maxIter=500, msMaxIter=500))
 }
 
 if (is.REML==FALSE){
@@ -57,9 +55,7 @@ fit.Model.12 = lme(fixed = Y ~ 1 + Z + X.Actor + X.Actor.2 + X.Actor.Z + X.Actor
                   weights = varIdent(form = ~1|Gender),
                   data = data, na.action=na.omit, 
                   method = 'ML',
-                  control = lmeControl(opt = "optim", method = "L-BFGS-B",
-                  optCtrl=list(maxfun=2e5),msVerbose=FALSE,         
-                  maxIter=1000,msMaxIter=1000)) 
+                  control=list(msVerbose=TRUE, maxIter=500, msMaxIter=500)) 
 }
 
 # Performance measures 
